@@ -16,7 +16,13 @@ class CalculatorTest {
     @Test
     void integerSubtraction() {
         Calculator calculator = new Calculator();
-        int result = calculator.integerSubtraction(15, 10);
-        assertEquals(5, result, "15-10 did not return 5");
+        int minuend = 15;
+        int subtrahend = 10;
+        int expectedResult = 5;
+        int actualResult = calculator.integerSubtraction(minuend, subtrahend);
+
+        // Lazy assert message
+        assertEquals(expectedResult, actualResult,
+                () -> minuend + " - " + subtrahend + " did not produce " + expectedResult);
     }
 }

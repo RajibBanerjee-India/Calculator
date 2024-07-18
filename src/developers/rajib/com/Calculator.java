@@ -1,4 +1,4 @@
-package com.rajib;
+package developers.rajib.com;
 
 public class Calculator {
 

@@ -11,7 +11,7 @@ class CalculatorTest {
 
     @BeforeAll
     static void setup() {
-     System.out.println("Executing @BeforeAll method.");
+        System.out.println("Executing @BeforeAll method.");
     }
 
     @AfterAll
@@ -48,11 +48,32 @@ class CalculatorTest {
     }
 
     @Disabled("TODO : Still need to work on it")
+    @DisplayName("Division by Zero - Disabled")
+    @Test
+    void testIntegerDivision_WhenDividendIsDividedByZero_Disabled() {
+        System.out.println("Running Division by Zero - Disabled");
+        fail("Not implemented yet");
+    }
+
     @DisplayName("Division by Zero")
     @Test
     void testIntegerDivision_WhenDividendIsDividedByZero_ShouldThrowArithmeticException() {
         System.out.println("Running Division by Zero");
-        fail("Not implemented yet");
+
+        // Arrange
+        int dividend = 4;
+        int divisor = 0;
+        String expectedExceptionMessage = "/ by zero";
+
+        // Act & Assert
+        ArithmeticException actualResult = assertThrows(ArithmeticException.class,
+                // Act
+                () -> calculator.integerDivision(dividend, divisor),
+                "Division by zero should have thrown Arithmetic Exception.");
+
+        // Assert
+        assertEquals(expectedExceptionMessage, actualResult.getMessage(),
+                "Unexpected exception message.");
     }
 
     @DisplayName("Test 15-10 = 5")

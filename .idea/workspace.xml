@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="853cf2b0-0205-48f4-b086-3103b89df02f" name="Changes" comment="Junit Test Lifecycle">
+    <list default="true" id="853cf2b0-0205-48f4-b086-3103b89df02f" name="Changes" comment="Not Recommended - Disabling a Unit Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/developers/rajib/com/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/developers/rajib/com/CalculatorTest.java" afterDir="false" />
     </list>
@@ -54,27 +54,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.CalculatorTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.integerDivision.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.integerSubtraction.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;/Users/rajibbanerjee/IdeaProjects/Calculator/src&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/rajibbanerjee/IdeaProjects/Calculator/src/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.CalculatorTest (1).executor": "Run",
+    "JUnit.CalculatorTest.executor": "Run",
+    "JUnit.CalculatorTest.integerDivision.executor": "Run",
+    "JUnit.CalculatorTest.integerSubtraction.executor": "Run",
+    "JUnit.CalculatorTest.testIntegerDivision_WhenDividendIsDividedByZero_ShouldThrowArithmeticException.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "develop",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/Users/rajibbanerjee/IdeaProjects/Calculator/src",
+    "onboarding.tips.debug.path": "/Users/rajibbanerjee/IdeaProjects/Calculator/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -86,7 +87,7 @@
       <recent name="com.rajib" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CalculatorTest">
     <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Calculator" />
       <extension name="coverage">
@@ -108,9 +109,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CalculatorTest.testIntegerDivision_WhenDividendIsDividedByZero_ShouldThrowArithmeticException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="developers.rajib.com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="developers.rajib.com" />
+      <option name="MAIN_CLASS_NAME" value="developers.rajib.com.CalculatorTest" />
+      <option name="METHOD_NAME" value="testIntegerDivision_WhenDividendIsDividedByZero_ShouldThrowArithmeticException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CalculatorTest" />
+        <item itemvalue="JUnit.CalculatorTest.testIntegerDivision_WhenDividendIsDividedByZero_ShouldThrowArithmeticException" />
         <item itemvalue="JUnit.CalculatorTest" />
       </list>
     </recent_temporary>
@@ -172,10 +190,33 @@
       <option name="project" value="LOCAL" />
       <updated>1722581532132</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Not Recommended - Disabling a Unit Test">
+      <option name="closed" value="true" />
+      <created>1722581965003</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722581965003</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -205,6 +246,7 @@
     <MESSAGE value="Naming unit tests" />
     <MESSAGE value="Naming unit tests - DisplayName annotation" />
     <MESSAGE value="Junit Test Lifecycle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Junit Test Lifecycle" />
+    <MESSAGE value="Not Recommended - Disabling a Unit Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Not Recommended - Disabling a Unit Test" />
   </component>
 </project>

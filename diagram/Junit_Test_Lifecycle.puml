@@ -1,0 +1,35 @@
+@startuml
+
+rectangle beforeAll() {
+}
+
+rectangle Class Instance 1 {
+ rectangle beforeEach() {
+ }
+ rectangle Test method 3() {
+ }
+ rectangle afterEach() {
+ }
+}
+
+rectangle Class Instance 2 {
+ rectangle beforeEach() {
+ }
+ rectangle Test method 1() {
+ }
+ rectangle afterEach() {
+ }
+}
+
+rectangle Class Instance 3 {
+ rectangle beforeEach() {
+ }
+ rectangle Test method 2() {
+ }
+ rectangle afterEach() {
+ }
+}
+
+rectangle afterAll()
+
+@enduml

@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="853cf2b0-0205-48f4-b086-3103b89df02f" name="Changes" comment="Naming unit tests - DisplayName annotation">
-      <change afterPath="$PROJECT_DIR$/diagram/Junit_Test_Lifecycle.puml" afterDir="false" />
+    <list default="true" id="853cf2b0-0205-48f4-b086-3103b89df02f" name="Changes" comment="Junit Test Lifecycle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/developers/rajib/com/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/developers/rajib/com/CalculatorTest.java" afterDir="false" />
     </list>
@@ -165,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721287801187</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Junit Test Lifecycle">
+      <option name="closed" value="true" />
+      <created>1722581532132</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722581532132</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,6 +204,7 @@
     <MESSAGE value="Lazy assert message" />
     <MESSAGE value="Naming unit tests" />
     <MESSAGE value="Naming unit tests - DisplayName annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Naming unit tests - DisplayName annotation" />
+    <MESSAGE value="Junit Test Lifecycle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Junit Test Lifecycle" />
   </component>
 </project>

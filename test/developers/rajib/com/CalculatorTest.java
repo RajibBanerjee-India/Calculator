@@ -63,7 +63,7 @@ class CalculatorTest {
         // Arrange
         int dividend = 4;
         int divisor = 0;
-        String expectedExceptionMessage = "/ by zero";
+        String string = "/ by zero";
 
         // Act & Assert
         ArithmeticException actualResult = assertThrows(ArithmeticException.class,
@@ -72,7 +72,7 @@ class CalculatorTest {
                 "Division by zero should have thrown Arithmetic Exception.");
 
         // Assert
-        assertEquals(expectedExceptionMessage, actualResult.getMessage(),
+        assertEquals(string, actualResult.getMessage(),
                 "Unexpected exception message.");
     }
 

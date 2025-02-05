@@ -2,10 +2,7 @@ package developers.rajib.com;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.MethodSource;
-
-import java.util.stream.Stream;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -83,7 +80,12 @@ class CalculatorTest {
 
     @DisplayName("Test integer subtraction [minuend, subtrahend, expectedResult]")
     @ParameterizedTest
-    @MethodSource()
+    //@MethodSource()
+    @CsvSource({
+            "27, 25, 2",
+            "89, 45, 44",
+            "340, 230, 110"
+    })
     void integerSubtraction(int minuend,
                             int subtrahend,
                             int expectedResult) {
@@ -95,13 +97,30 @@ class CalculatorTest {
                 () -> minuend + " - " + subtrahend + " did not produce " + expectedResult);
     }
 
-    private static Stream<Arguments> integerSubtraction() {
+    @DisplayName("Testing String argument passing with CsvSource annotation")
+    @ParameterizedTest
+    @CsvSource({
+            "Rajib, Banerjee, RajibBanerjee",
+            "Raj, '', Raj ", // lName is empty
+            "Raju, , Rajunull" // lName is null
+    })
+    void parameterizedTestWithString(String fName,
+                                     String lName,
+                                     String expectedFullName) {
+
+        String actualFullName = fName+lName;
+        System.out.println("Full Name - " + expectedFullName);
+
+        assertEquals(expectedFullName, actualFullName, "Full Name doesn't match");
+    }
+
+    /*private static Stream<Arguments> integerSubtraction() {
 
         return Stream.of(
                 Arguments.of(33, 1, 32),
                 Arguments.of(54, 34, 20),
                 Arguments.of(24, 5, 19)
         );
-    }
+    }*/
 
 }

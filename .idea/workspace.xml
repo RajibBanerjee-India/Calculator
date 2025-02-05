@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="853cf2b0-0205-48f4-b086-3103b89df02f" name="Changes" comment="Not Recommended - Disabling a Unit Test">
+    <list default="true" id="853cf2b0-0205-48f4-b086-3103b89df02f" name="Changes" comment="ParameterizedTest and MethodSource">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/developers/rajib/com/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/developers/rajib/com/CalculatorTest.java" afterDir="false" />
     </list>
@@ -61,6 +61,7 @@
     "JUnit.CalculatorTest.executor": "Run",
     "JUnit.CalculatorTest.integerDivision.executor": "Run",
     "JUnit.CalculatorTest.integerSubtraction.executor": "Run",
+    "JUnit.CalculatorTest.parameterizedTestWithString.executor": "Run",
     "JUnit.CalculatorTest.testIntegerDivision_WhenDividendIsDividedByZero_ShouldThrowArithmeticException.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -87,7 +88,7 @@
       <recent name="com.rajib" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CalculatorTest.integerSubtraction">
+  <component name="RunManager" selected="JUnit.CalculatorTest.parameterizedTestWithString">
     <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Calculator" />
       <extension name="coverage">
@@ -125,6 +126,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CalculatorTest.parameterizedTestWithString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="developers.rajib.com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="developers.rajib.com" />
+      <option name="MAIN_CLASS_NAME" value="developers.rajib.com.CalculatorTest" />
+      <option name="METHOD_NAME" value="parameterizedTestWithString(java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CalculatorTest.testIntegerDivision_WhenDividendIsDividedByZero_ShouldThrowArithmeticException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Calculator" />
       <extension name="coverage">
@@ -143,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalculatorTest.parameterizedTestWithString" />
         <item itemvalue="JUnit.CalculatorTest.integerSubtraction" />
         <item itemvalue="JUnit.CalculatorTest.testIntegerDivision_WhenDividendIsDividedByZero_ShouldThrowArithmeticException" />
         <item itemvalue="JUnit.CalculatorTest" />
         <item itemvalue="JUnit.CalculatorTest" />
-        <item itemvalue="JUnit.CalculatorTest.testIntegerDivision_WhenDividendIsDividedByZero_ShouldThrowArithmeticException" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722581965003</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ParameterizedTest and MethodSource">
+      <option name="closed" value="true" />
+      <created>1738720107476</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738720107476</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,6 +290,7 @@
     <MESSAGE value="Naming unit tests - DisplayName annotation" />
     <MESSAGE value="Junit Test Lifecycle" />
     <MESSAGE value="Not Recommended - Disabling a Unit Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Not Recommended - Disabling a Unit Test" />
+    <MESSAGE value="ParameterizedTest and MethodSource" />
+    <option name="LAST_COMMIT_MESSAGE" value="ParameterizedTest and MethodSource" />
   </component>
 </project>

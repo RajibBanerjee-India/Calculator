@@ -3,6 +3,7 @@ package developers.rajib.com;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.MethodSource;
 
@@ -124,6 +125,21 @@ class CalculatorTest {
                                         int subtrahend,
                                         int expectedResult) {
         System.out.println("Running IntegerSubtractionMethodSource Test " + minuend + "-" + subtrahend + "=" + expectedResult);
+        int actualResult = calculator.integerSubtraction(minuend, subtrahend);
+
+        // Lazy assert message
+        assertEquals(expectedResult, actualResult,
+                () -> minuend + " - " + subtrahend + " did not produce " + expectedResult);
+    }
+
+    @DisplayName("Test integer subtraction [minuend, subtrahend, expectedResult]")
+    @ParameterizedTest
+    @CsvFileSource(resources = "/integerSubtraction.csv")
+    void integerSubtractionCSVFileSource(int minuend,
+                                         int subtrahend,
+                                         int expectedResult) {
+
+        System.out.println("Running integerSubtractionCSVFileSource Test " + minuend + "-" + subtrahend + "=" + expectedResult);
         int actualResult = calculator.integerSubtraction(minuend, subtrahend);
 
         // Lazy assert message

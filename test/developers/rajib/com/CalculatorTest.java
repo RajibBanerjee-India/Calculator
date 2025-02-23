@@ -2,7 +2,11 @@ package developers.rajib.com;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.MethodSource;
+
+import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -80,7 +84,6 @@ class CalculatorTest {
 
     @DisplayName("Test integer subtraction [minuend, subtrahend, expectedResult]")
     @ParameterizedTest
-    //@MethodSource()
     @CsvSource({
             "27, 25, 2",
             "89, 45, 44",
@@ -114,13 +117,27 @@ class CalculatorTest {
         assertEquals(expectedFullName, actualFullName, "Full Name doesn't match");
     }
 
-    /*private static Stream<Arguments> integerSubtraction() {
+    @DisplayName("Test integer subtraction [minuend, subtrahend, expectedResult]")
+    @ParameterizedTest
+    @MethodSource
+    void integerSubtractionMethodSource(int minuend,
+                                        int subtrahend,
+                                        int expectedResult) {
+        System.out.println("Running IntegerSubtractionMethodSource Test " + minuend + "-" + subtrahend + "=" + expectedResult);
+        int actualResult = calculator.integerSubtraction(minuend, subtrahend);
+
+        // Lazy assert message
+        assertEquals(expectedResult, actualResult,
+                () -> minuend + " - " + subtrahend + " did not produce " + expectedResult);
+    }
+
+    private static Stream<Arguments> integerSubtractionMethodSource() {
 
         return Stream.of(
                 Arguments.of(33, 1, 32),
                 Arguments.of(54, 34, 20),
                 Arguments.of(24, 5, 19)
         );
-    }*/
+    }
 
 }
